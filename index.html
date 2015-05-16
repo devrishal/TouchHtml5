@@ -1,0 +1,14 @@
+<html>
+<body>
+    <script src="kiwi.js"></script>
+    <script src="loadingState.js"></script>
+    <script src="myState.js"></script>
+    <script type="text/javascript">
+    	var myGame = new Kiwi.Game('','myGame',null,Kiwi.TARGET_COCOON);
+    	myGame.states.addState(myState);
+    	myGame.states.addState(loadingState);
+    	myGame.states.addState(preloader);
+    	myGame.states.switchState('preloader');
+    </script>
+</body>
+</html>
